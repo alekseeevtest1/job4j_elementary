@@ -37,19 +37,15 @@ public  class LogicNot {
     }
 
     public static boolean notEvenAndPositive(int num) {
-        if (!isEven(num) && isPositive(num)){
 
-            return true;
-        }
-        return false;
+        return  (!isEven(num) && isPositive(num));
 
     }
 
     public static boolean evenOrNotPositive(int num) {
-        if (isEven( num) || notPositive(num)){
-            return true;
-        }
-        return false;
+
+
+        return (isEven( num) || notPositive(num));
     }
 
     public static void main(String[] args) {
