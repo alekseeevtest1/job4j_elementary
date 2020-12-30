@@ -23,4 +23,10 @@ public class FitnessTest {
         int month = Fitnes.calc(50, 90);
         assertThat(month, is(2));
     }
+
+    @Test
+    public void whenIvanLessByOneeNik() {
+        int month = Fitnes.calc(90, 90);
+        assertThat(month, is(1));
+    }
 }
