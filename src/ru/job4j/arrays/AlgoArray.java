@@ -13,12 +13,17 @@ public class AlgoArray {
                     temp = array[index];
                     array[index] = array[index - 1];
                     array[index - 1] = temp;
+                    sorted = false;
+                }else {
                     sorted = true;
-
                 }
 
-
             }
+
         }
+        for (int i = 0; i < array.length; i++){
+            System.out.println(array[i]);
+        }
+
     }
 }
