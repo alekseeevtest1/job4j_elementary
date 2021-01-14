@@ -12,4 +12,28 @@ public class FindLoop {
         }
         return res;
     }
+
+    /**
+     *  data - массив чисел,
+     *
+     *     el - элемент, который нужно найти,
+     *
+     *     start - индекс, с которого начинаем поиск,
+     *
+     *     finish - индекс, которым заканчиваем поиск.
+     *
+     *     {5, 2, 10, 2, 4}
+     */
+    public static int indexOf(int[] data, int el, int start, int finish) {
+        int rst = -1;
+        for (; start <= finish; start++ ){
+            if (data[start] == el){
+                rst = start;
+                return rst;
+            }
+        }
+
+         /* если элемента нет в массиве, то возвращаем -1. */
+        return rst;
+    }
 }
